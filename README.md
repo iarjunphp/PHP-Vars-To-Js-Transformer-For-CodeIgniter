@@ -11,20 +11,25 @@ Download the files add put PHPtoJS.php class in your library folder<code>applica
 
 ## Locally
 
-<pre>
+
+```
   $this->load->library('PHPtoJS');
-</pre>
+
+```
 
 ## Globally 
 Open you autoload.php file which located at <code>application\config\autoload.php</code>
-<pre>
+
+```
 $autoload['libraries'] = array('PHPtoJS');
-</pre>
+
+```
 
 After loading library,  you may use in your controllers as shown below.
 
 
-<pre>
+
+```
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -43,11 +48,14 @@ class Welcome extends CI_Controller {
 	    $this->load->view('welcome_message');
 	}
 }
-	</pre>
+
+```
 	
-	Final step in your layout page add this line
+Final step in your layout page add this line
 	
-	<pre>
+
+```
 	 echo $this->phptojs->getJsVars(); 
-	</pre>
+
+```
 	
